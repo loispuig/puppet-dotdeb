@@ -24,6 +24,7 @@ Install dotdeb repository on Debian based OS :
 
 ## Usage
 
+Insert the following line into your puppet manifest.
 ```
 include dotdeb
 ```
