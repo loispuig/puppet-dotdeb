@@ -18,7 +18,7 @@ Setup dotdeb repository on Debian OS :
 
 ## Required dependencies
 
-* Puppet module : puppetlabs/apt >= 2.2.1
+* Puppet module : puppetlabs/apt >= 2.2.2
 
 ## Usage
 
