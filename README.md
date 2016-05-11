@@ -29,7 +29,7 @@ include dotdeb
 which is equivalent to
 ```
 class { "dotdeb":
-	pin => 950
+	pin => 750
 }
 ```
 
@@ -41,5 +41,5 @@ class { "dotdeb":
 ## Limitations
 
 Tested on Debian 8 using Puppet 3.7 / 3.8.  
-Debian OS only.
-Puppet >= 3.3 required.
+Debian OS only.  
+Puppet >= 3.7 required.
