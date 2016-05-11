@@ -10,5 +10,5 @@
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
 class { 'dotdeb':
-	pin => 950,
+	pin => 750,
 }
