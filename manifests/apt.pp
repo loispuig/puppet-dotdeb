@@ -1,5 +1,5 @@
 class dotdeb::apt inherits dotdeb {
-	if $::osfamily == 'debian' {
+	if $::lsbdistid == 'Debian' {
 		apt::source { "dotdeb":
 			location => "http://packages.dotdeb.org",
 			release  => $::lsbdistcodename,
