@@ -10,16 +10,14 @@
 
 ## Overview
 
-Install dotdeb repository on Debian based OS :
+Setup dotdeb repository on Debian OS :
 
-* Installs required package if needed
-* Modifies the /etc/default/locale file content
-* Modifies the /etc/locale.gen file content
-* Executes locale-gen and locale-update commands
+* Creates /etc/apt/sources.list.d/dotdeb.list
+* Creates /etc/apt/preferences.d/dotdeb.pref
+* Execute apt-update
 
 ## Required dependencies
 
-* Puppet module : puppetlabs/stdlib >= 4.5.0 < 5.0.0
 * Puppet module : puppetlabs/apt >= 2.2.1
 
 ## Usage
@@ -27,6 +25,12 @@ Install dotdeb repository on Debian based OS :
 Insert the following line into your puppet manifest.
 ```
 include dotdeb
+```
+which is equivalent to
+```
+class { "dotdeb":
+	pin => 950
+}
 ```
 
 ## Reference
@@ -36,6 +40,6 @@ include dotdeb
 
 ## Limitations
 
-Tested on Debian 8 using Puppet 3.7.  
-Debian 8 required for now.
+Tested on Debian 8 using Puppet 3.7 / 3.8.  
+Debian OS only.
 Puppet >= 3.3 required.
